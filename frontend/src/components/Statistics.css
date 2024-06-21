@@ -1,0 +1,9 @@
+.card{
+    background-color: #76ABAE;
+    width: 25rem;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    text-align: center;
+    margin-right: auto;
+    color: #222831;
+}

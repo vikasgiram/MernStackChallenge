@@ -1,0 +1,26 @@
+
+.transaction-table{
+    background-color: #222831;
+    color: white;
+    
+}
+.table-head{
+    background-color: #76ABAE;
+}
+.container{
+    color: #76ABAE;
+}
+.table-row{
+    background-color: #76ABAE;
+    color: #222831;
+}
+
+.table-row:hover{
+    background-color: white !important;
+    cursor: pointer;
+}
+
+.MuiTableCell-head {
+    background-color: #76ABAE !important; /* or any other color you prefer */
+    color: #fff !important; /* or any other text color you prefer */
+  }
