@@ -11,7 +11,6 @@ exports.listTransactions = async (req, res) => {
         }
 
         const monthNumber = parseInt(month, 10);
-        const searchNumber = parseFloat(search); // Parse the search string to a float for price comparison
 
         // Step 1: Add month field
         const addFieldsStage = {
@@ -27,7 +26,7 @@ exports.listTransactions = async (req, res) => {
                 $or: [
                     { title: regex },
                     { description: regex },
-                    { price: isNaN(searchNumber) ? { $exists: true } : searchNumber } // Check if search is a number
+                    { price: { $regex: regex } } // Treat price as a string for regex search
                 ]
             }
         };
